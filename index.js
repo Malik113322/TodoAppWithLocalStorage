@@ -87,7 +87,7 @@ let removeItem = (noteIndex) => {
 let search = document.getElementById("search-button");
 
 search.addEventListener("input", () => {
-  let searchValue = search.value;
+  let searchValue = search.value.toLowerCase();
 
   let cardContainer = document.getElementsByClassName("card-container");
   Array.from(cardContainer).forEach((ele) => {
